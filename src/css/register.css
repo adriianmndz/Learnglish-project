@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.backg{
+    position: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/image_1.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    width: 110%;
+    height: 108vh;
+}
+
+.regbox{
+    width: 685px;
+    height: 450px;
+    margin-top: 10.5%;
+    margin-left: 343px;
+    position: fixed;
+    background: #dd6355;
+    box-shadow: 0 5px 15px black;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.regbox h1{
+    color: white;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fname label{
+    left: 127px;
+    top: 103px;
+    position: absolute;
+    font-size: 20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+}
+
+.fname:hover label,
+.fname:focus-within label{
+    transform: translateX(-95px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.input-group.fname.filled label{
+    transform: translateX(-97px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.fname input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.sname label{
+    left: 127px;
+    top: 149px;
+    position: absolute;
+    font-size: 20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+}
+
+.sname:hover label,
+.sname:focus-within label{
+    transform: translateX(-97px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.input-group.sname.filled label{
+    transform: translateX(-99px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.sname input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.email label{
+    left: 127px;
+    top: 195px;
+    position: absolute;
+    font-size:20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+}
+
+.email:hover label,
+.email:focus-within label{
+    transform: translateX(-113px);
+    top: 190px;
+    width: 100px;
+    font-size: 15px;
+    white-space: normal;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.input-group.email.filled label{
+    transform: translateX(-115px);
+    top: 190px;
+    width: 100px;
+    font-size: 15px;
+    white-space: normal;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.email input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.password label{
+    left: 127px;
+    top: 240px;
+    position: absolute;
+    font-size: 20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+}
+
+.password:hover label,
+.password:focus-within label{
+    transform: translateX(-112px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.input-group.password.filled label{
+    transform: translateX(-114px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.password input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.repeatpassword label{
+    left: 127px;
+    top: 287px;
+    position: absolute;
+    font-size: 20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+}
+
+.repeatpassword:hover label,
+.repeatpassword:focus-within label{
+    transform: translateX(-115px);
+    top: 282px;
+    width: 100px;
+    font-size: 15px;
+    white-space: normal;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.input-group.repeatpassword.filled label{
+    transform: translateX(-117px);
+    top: 282px;
+    width: 100px;
+    font-size: 15px;
+    white-space: normal;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.repeatpassword input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #000000;
+}

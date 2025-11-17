@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+}
+
+.backg{
+    position: fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/image_1.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    width: 110%;
+    height: 108vh;
+}
+
+.logbox{
+    width: 350px;
+    height: 450px;
+    margin-top: 10.5%;
+    margin-left: 37%;
+    position: fixed;
+    background: #dd6355;
+    box-shadow: 0 5px 15px black;
+    text-align: center;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+.logbox h1{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.input-group.filled label{
+    transform: translateY(-43px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.username label{
+    left: 0px;
+    top: 38px;
+    position: relative;
+    font-size: 20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+    transform: translateY(0);
+}
+
+.username:hover label,
+.username:focus-within label{
+    transform: translateY(-43px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.username input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.password label{
+    left: 0px;
+    top: 38px;
+    position: relative;
+    font-size: 20px;
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: inline-block;
+    transition: transform .5s ease;
+    transform: translateY(0);
+}
+
+.password:hover label,
+.password:focus-within label{
+    transform: translateY(-43px);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.password input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button{
+    padding: 10px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+.passwordforgot{
+    color: #f6cc9e;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.register{
+    color: #f6cc9e;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #000000;
+}
