@@ -1,3 +1,11 @@
+function positionmenumapnav(){
+  const menu = document.getElementById("menumapnav");
+  const menu2 = menu.value;
+  if (menu2){
+    window.location.href = menu2;
+  }
+}
+
 const grupos = ['username','password'];
 grupos.forEach((tipo) => {
   document.querySelectorAll(`.input-group.${tipo} input`).forEach((input) => {
@@ -17,3 +25,15 @@ grupos.forEach((tipo) => {
   updateFilled();
 });
 });
+
+function checkinput(){
+  const name = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+
+  if (name === "admin" && pass === "admin"){
+    window.location.href = "logindex.html";
+    return false;
+  } else
+    alert("Nombre de usuario o contraseña incorrecto")
+  return false;
+}

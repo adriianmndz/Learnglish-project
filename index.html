@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <title>Learnglish Webside</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
     <div class="backg">
-
-    </div>
-    
-    <div class="logbox">
+        <label for="menumapnav"></label>
+        <select id="menumapnav" onchange="positionmenumapnav()">
+            <option value="">☰ Menú</option>
+            <option value="index.html">🔐 Iniciar sesión</option>
+            <option value="register.html">📝 Registrarse</option>
+            <option value="forgotpassword.html">🔒 Reestablecer contraseña</option>
+        </select>
+        <div class="infobox">
+            <h1>Learnglish</h1>
+            <h2>Aprendizaje colaborativo, estructurado y personalizado.</h2>
+            <h3><a href="aboutus.html">Nosotros</a></h3>
+        </div>
+        <div class="logbox">
         <h1>Inicio de sesión</h1>
-        <form method="userbox">
+        <form onsubmit="return checkinput()">
             <div class="input-group username">
                 <label for="username">Nombre de usuario</label>
                 <input type="text" id="username" name="username" required />
@@ -27,15 +39,13 @@
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" required />
             </div>
-            <div class="button">
-                <button type="submit">Iniciar</button>
+            <div class="passwordforgot">
+                <h3>¿Olvidó su <a href="forgotpassword.html">contraseña</a>?</h3>
             </div>
-                <div class="passwordforgot">
-                    <h3>¿Olvidó su <a href="forgotpassword.html">contraseña</a>?</h3>
-                </div>
-                <div class="register">
-                    <h3>O cree una <a href="register.html">cuenta</a>.</h3>
-                </div>
+                <button class="btnsubmit" type="submit">Iniciar</button>
+            <div class="register">
+                <h3>O cree una <a href="register.html">cuenta</a>.</h3>
+            </div>
         </form>
         </div>
     </div>

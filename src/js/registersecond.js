@@ -6,7 +6,7 @@ function positionmenumapnav(){
   }
 }
 
-const grupos = ['fname', 'sname', 'email', 'password', 'repeatpassword'];
+const grupos = ['confirmationcode'];
 grupos.forEach((tipo) => {
   document.querySelectorAll(`.input-group.${tipo} input`).forEach((input) => {
   const group = input.closest(`.input-group.${tipo}`);
@@ -25,15 +25,3 @@ grupos.forEach((tipo) => {
   updateFilled();
 });
 });
-
-function validar(){
-  const pass1 = document.getElementById("password").value;
-  const pass2 = document.getElementById("repeatpassword").value;
-
-  if (pass1 === pass2){
-    window.location.href = "registersecond.html";
-    return false;
-  } else
-    alert("La contraseña no coincide");
-    return false;
-}

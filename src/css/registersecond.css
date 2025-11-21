@@ -39,7 +39,7 @@
     background-color: #cc503d;
 }
 
-.regbox{
+.confirmationbox{
     width: 700px;
     height: 450px;
     top: 150px;
@@ -78,16 +78,45 @@
     transition: transform .4s ease;
 }
 
-.regbox h1{
+.confirmationbox h1{
     color: white;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
+    font-size: 35px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.informationbox h1{
+    color: white;
+    padding: 12px 50px;
+    margin-bottom: 1px;
+    font-size: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.informationbox h2{
+    color: white;
+    margin-bottom: 20px;
+    padding: 1px 50px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.forwardemail h3{
+    color: white;
+    margin-bottom: 60px;
+    left: 596px;
+    top: 378px;
+    font-size: 15px;
+    font-weight: 400;
     text-shadow: 1px 1px 1px #000000;
 }
 
 .input-group{
     position: relative;
-    width: 250px;
+    width: 270px;
     height: 40px;
     margin-bottom: 20px;
     display: flex;
@@ -102,7 +131,7 @@
     font-size: 24px;
     color: #f6cc9e;
     font-weight: 900;
-    transform: translateX(0);
+    transform: translateY(0);
     transition: transform .5s ease;
     pointer-events: none;
 }
@@ -116,42 +145,13 @@
     margin-right: 0 auto;
 }
 
-.fname:hover label,
-.fname:focus-within label,
-.input-group.fname.filled label{
-    transform: translateX(-132px);
+.confirmationcode:hover label,
+.confirmationcode:focus-within label,
+.input-group.filled label{
+    transform: translateY(-50px);
     text-shadow: 1px 1px 1px #000000;
 }
-.sname:hover label,
-.sname:focus-within label,
-.input-group.sname.filled label{
-    transform: translateX(-133px);
-    text-shadow: 1px 1px 1px #000000;
-}
-.password:hover label,
-.password:focus-within label,
-.input-group.password.filled label{
-    transform: translateX(-135px);
-    text-shadow: 1px 1px 1px #000000;
-}
-.email:hover label,
-.email:focus-within label,
-.input-group.email.filled label{
-    transform: translateX(-135px);
-    text-shadow: 1px 1px 1px #000000;
-    font-size: 20px;
-    width: 25%;
-    white-space: normal;
-}
-.repeatpassword:hover label,
-.repeatpassword:focus-within label,
-.input-group.repeatpassword.filled label{
-    transform: translateX(-135px);
-    text-shadow: 1px 1px 1px #000000;
-    font-size: 20px;
-    width: 25%;
-    white-space: normal;
-}
+
 
 .btnsubmit{
     width: 150px;

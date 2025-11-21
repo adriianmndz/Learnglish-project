@@ -10,109 +10,171 @@
     position: fixed;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/image_1.png);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
     z-index: -1;
-    width: 110%;
+    width: 100%;
     height: 108vh;
+}
+
+#menumapnav{
+    height: 50px;
+    width: 90px;
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    background-color: #ee432c;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px black;
+}
+
+#menumapnav:hover{
+    transform: translateX(5px);
+    background-color: #cc503d;
+}
+
+#menumapnav:focus{
+    transform: translateX(5px);
+    background-color: #cc503d;
 }
 
 .logbox{
     width: 350px;
     height: 450px;
-    margin-top: 10.5%;
-    margin-left: 37%;
-    position: fixed;
-    background: #dd6355;
+    top: 150px;
+    margin: 0 auto;
+    position: relative;
+    background: #ee432c;
     box-shadow: 0 5px 15px black;
+    align-items: center center;
     text-align: center;
     padding: 30px;
     border: none;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .logbox h1{
     color: white;
     margin-top: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 1px 1px 1px #000000;
 }
 
-.input-group.filled label{
-    transform: translateY(-43px);
-    text-shadow: 1px 1px 1px #000000;
+.input-group{
+    position: relative;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.username label{
-    left: 0px;
-    top: 38px;
-    position: relative;
-    font-size: 20px;
+.input-group label{
+    position: absolute;
+    left: 10px;
+    font-size: 24px;
     color: #f6cc9e;
-    margin-bottom: 10px;
     font-weight: 900;
-    display: inline-block;
-    transition: transform .5s ease;
     transform: translateY(0);
+    transition: transform .5s ease;
+    pointer-events: none;
+}
+
+.input-group input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
 }
 
 .username:hover label,
-.username:focus-within label{
-    transform: translateY(-43px);
-    text-shadow: 1px 1px 1px #000000;
-}
-
-.username input{
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.password label{
-    left: 0px;
-    top: 38px;
-    position: relative;
-    font-size: 20px;
-    color: #f6cc9e;
-    margin-bottom: 10px;
-    font-weight: 900;
-    display: inline-block;
-    transition: transform .5s ease;
-    transform: translateY(0);
-}
-
+.username:focus-within label,
 .password:hover label,
-.password:focus-within label{
-    transform: translateY(-43px);
-    text-shadow: 1px 1px 1px #000000;
+.password:focus-within label,
+.input-group.filled label{
+    transform: translateY(-45px);
+    text-shadow: 1px 1px 2px black;
 }
 
-.password input{
-    width: 80%;
+.btnsubmit{
+    width: 150px;
+    top: 300px;
+    left: 100px;
+    position: absolute;
+    font-size: 24px;
     padding: 10px;
-    margin-bottom: 35px;
-    border: none;
-    border-radius: 5px;
-}
-
-.button{
-    padding: 10px;
-    margin-bottom: 40px;
-    border: none;
     border-radius: 10px;
+    background-color: #da3f2a;
+    color: white;
+    z-index: 1;
+    box-shadow: #000000 2px 1px;
+    cursor: pointer;
+    border: 2px solid #d32f2f;
+}
+
+.btnsubmit:hover{
+    background-color: #2596be;
+    color: #f6cc9e;
+    transform: translateY(-2px);
 }
 
 .passwordforgot{
     color: #f6cc9e;
+    margin-top: 115px;
+    font-size: 12px;
     font-weight: 900;
     text-shadow: 1px 1px 1px #000000;
 }
 
 .register{
     color: #f6cc9e;
+    font-size: 12px;
     margin-bottom: 10px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.infobox{
+    width: 400px;
+    height: 450px;
+    top: 150px;
+    right: 20px;
+    position: absolute;
+    background: #ee432c;
+    box-shadow: 0 5px 15px black;
+    align-items: center center;
+    text-align: center;
+    padding: 30px;
+    border: none;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.infobox h1{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.infobox h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.infobox h3{
+    margin-top: 200px;
+    color: #f6cc9e;
+    font-size: 12px;
     font-weight: 900;
     text-shadow: 1px 1px 1px #000000;
 }
