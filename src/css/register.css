@@ -42,17 +42,20 @@
 .regbox{
     width: 700px;
     height: 450px;
-    top: 150px;
+    top: 50%;
+    left: 50%;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     background: #ee432c;
     box-shadow: 0 5px 15px black;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     border: none;
     border-radius: 20px;
     z-index: 1;
+    transform: translate(-50%, -50%);
 }
 
 .btnreturnpage{
